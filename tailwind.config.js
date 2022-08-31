@@ -1,22 +1,35 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  darkMode: 'class',
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      'desktop': {'min': '1201px'},
-      // => @media (min-width: 1200px) { ... }
-
-      'laptop': {'min': '768px', 'max': '1200px'},
-      'tablet': {'min': '475px', 'max': '768px'},
-      'mobile': {'max': '475px'},
+    extend: {
+      'animation': {
+            'text':'text 5s ease infinite',
+        },
+        'keyframes': {
+            'text': {
+                '0%, 100%': {
+                   'background-size':'200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                   'background-size':'200% 200%',
+                    'background-position': 'right center'
+                }
+            },
+        }
     },
-    extend: {},
+    fontFamily: {
+      signature: ["Great Vibes"],
+    },
   },
+  
   plugins: [],
-}
+};
+
+
+
+
+
 
 
 
