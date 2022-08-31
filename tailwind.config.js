@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       'animation': {
-            'text':'text 5s ease infinite',
+            'text':'text 4s ease infinite',
         },
         'keyframes': {
             'text': {
@@ -20,6 +20,8 @@ module.exports = {
     },
     fontFamily: {
       signature: ["Great Vibes"],
+      header: ["Montserrat"],
+      nav: ["Catamaran"]
     },
   },
   

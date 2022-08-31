@@ -43,15 +43,15 @@ const Navbar = () => {
         {links.map(({ id, link, to }) => (
           <li
             key={id}
-            className="text-xl px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-200"
+            className="text-xl px-4 cursor-pointer capitalize font-bold text-gray-400 hover:scale-105 duration-200 font-nav"
           >
-            <Link to={to} smooth duration={500}>
+            <Link to={link} smooth duration={500}>
               {link}
             </Link>
           </li>
         ))}
       </ul>
-
+      
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
@@ -64,7 +64,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl font-nav"
             >
               <Link
                 onClick={() => setNav(!nav)}
