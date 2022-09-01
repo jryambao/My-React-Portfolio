@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-
+import Icons from "./Icons";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -78,6 +78,7 @@ const Navbar = () => {
           ))}
         </ul>
       )}
+      
     </div>
   );
 };

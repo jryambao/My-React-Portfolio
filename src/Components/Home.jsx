@@ -1,6 +1,5 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { BiDownload } from "react-icons/bi";
 import { Link } from "react-scroll";
 import Resume from '../assets/Resume.pdf'
 const Home = () => {
@@ -11,11 +10,12 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h4 className="text-xl sm:text-4xl font-semibold text-white text-center font-header">Hi, I'm John Yambao</h4>
+        
+          <h4 className="text-xl sm:text-4xl font-semibold text-white text-center font-header">I'm, <span className="text-purple-400 font-bold text-8xl font-signature"> John Yambao</span> </h4>
           <h2 className="text-4xl sm:text-7xl font-bold text-white text-center
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-indigo-500 via-purple-400 to-indigo-900
-            animate-text font-header"> A Fullstack Developer</h2>
+            animate-text font-header mt-4">Fullstack Developer</h2>
           <div className="flex justify-center mt-8">
           
           <a href={Resume} download="Resume" class="rounded-md relative inline-flex items-center justify-center h-12 px-6 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 shadow-md group">
@@ -41,15 +41,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        {/* <div>
-          <img
-            src={HeroImage}
-            alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
-        </div> */}
       </div>
+      
     </div>
   );
 };

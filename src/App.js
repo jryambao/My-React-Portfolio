@@ -5,6 +5,7 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import Work from './Components/Work';
 import Skills from './Components/Skills';
+import Icons from './Components/Icons';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div>
       <Navbar/>
       <Home/>
+      <div className="icons"><Icons/></div>
       <About/>
       <Skills/>
       <Work/>
