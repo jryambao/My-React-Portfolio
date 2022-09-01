@@ -6,8 +6,8 @@ const About = () => {
     <div className='h-screen w-full bg-black pt-24' name="about">
     <div className="container mx-auto">
       <div className='flex justify-between'>
-        <div className=''>
-          <h3 className='text-white text-4xl font-header font-bold text-start'>About Me</h3>
+        <div className='flex flex-col w-5/6'>
+          <h3 className='text-white text-4xl font-header font-bold text-center'>About Me</h3>
           <img className='w-screen h-5/6' src={profile} alt="profile" srcset="" />
         </div>
         <div className='flex justify-end'>
