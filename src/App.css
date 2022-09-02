@@ -1,10 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* fixed the position of social icons */
 .icons{
     position: fixed;
     top: 50%;
     margin-left: 26px;
     transform: translate(-50%, -50%);
 }
+
+.profile img{
+    max-width: 1000px;
+    height: 50vh;
+}
+
+.nav-title::first-letter{
+    font-size:3.5rem;
+    font-weight: 900;
+    color: #c084fc;
+}
+
+.nav-link li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #c084fc;
+    display: block;
+    transition: 0.3s;
+}
+.nav-link li:hover::after{
+    width: 100%;
+}
+
