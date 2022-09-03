@@ -8,8 +8,6 @@ import bootstrap from '../assets/bootstrap.png'
 import tailwind from '../assets/tailwind.png'
 import laravel from '../assets/laravel.png'
 import mui from '../assets/mui.png'
-
-
 const Skills = () => {
   const techs = [
     {
@@ -68,19 +66,19 @@ const Skills = () => {
     },
   ];
   return (
-    <div className='h-screen w-full bg-gradient-to-b from-gray-900 via-black to-black pt-24' name="skills">
+    <div className='sm:h-screen h-full w-full bg-gradient-to-b from-gray-900 via-black to-black sm:pt-24 pt-0 ' name="skills">
       <div className="container mx-auto">
         <div>
-          <h3 className='text-white text-5xl font-header font-bold text-start underline underline-offset-4'>Skills</h3>
+          <h3 className='text-white text-5xl font-header font-bold text-start underline underline-offset-8 decoration-gray-500'>Skills</h3>
           <span className='text-white text-sm font-header font-semibold text-start'>These are the technologies I have used.</span>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md font-nav hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+              className={`shadow-md font-nav py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-24 h-24 mx-auto" />
               <p className="mt-4 text-white font-semibold">{title}</p>
             </div>
           ))}

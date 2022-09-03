@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navbar/>
       <Home/>
-      <div className="icons"><Icons/></div>
+
       <About/>
       <Skills/>
       <Work/>

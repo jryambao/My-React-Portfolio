@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* fixed the position of social icons */
 .icons{
-    position: fixed;
     top: 50%;
     margin-left: 26px;
     transform: translate(-50%, -50%);
