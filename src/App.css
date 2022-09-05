@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 /* fixed the position of social icons */
 .icons{
     top: 50%;
