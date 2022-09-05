@@ -35,7 +35,7 @@ const Navbar = () => {
   const home= "home";
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
+    <div className="flex justify-between items-center w-screen md:w-full h-20 px-4 text-white bg-black fixed z-10">
       <div>
         <Link to={home} smooth duration={500}>
         <h1 className="text-5xl font-signature ml-2 cursor-pointer nav-title">John</h1>

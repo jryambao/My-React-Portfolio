@@ -127,7 +127,7 @@
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
-    margin-right: 15px;
+    padding-right: 15px;
     margin-top: 45px;
   }
   @media (min-width: 1269px) {
@@ -238,7 +238,7 @@
       top: 50px;
       border: 10px solid rgba(192, 132, 252, 0.63);
       width: 100%;
-      height: 70%;
+      height: 63%;
     }
     .profile{
       margin-right: 60px;
@@ -247,16 +247,14 @@
 
   @media (max-width: 850px) {
     .profile::before{
-      position: absolute;
+      position: relative;
       content: '';
       border: none;
+      width: 100%;
     }
     .profile img{
       width: 100%;
       margin-bottom: 12px;
-    }
-    .head-text span{
-      overflow-wrap: break-word
     }
   }
 
