@@ -67,7 +67,7 @@ const Work = () => {
                 <h2 className='font-bold text-white font-header text-xl text-center'>{title}</h2>
                 <p className='text-white font-semibold font-nav text-l'>{tech}</p>
                 <p className='text-xs text-white'>{description}</p>
-                <div className="flex flex-col">
+                <div className="flex flex-col lg:visible invisible">
                   <p className='text-xs text-white font-semibold font-nav mt-5'>{acct}</p>
                   <p className='text-xs text-white font-semibold font-nav'>{pass}</p>
                 </div>
@@ -86,6 +86,8 @@ const Work = () => {
         <div className='flex flex-col sm:justify-end pt-24'>
           <span className="text-white text-2xl font-semibold">Note:</span>
           <p className='text-white text-xl font-nav'>You may have noticed that this is almost all E-commerce projects, I am looking into adding more projects soon so I can fill the void spaces in this section :)</p>
+          <p className='text-white text-xl font-nav'>Please also note that HardPC and Content Management System isn't responsive, it was only made to be viewed on either Laptop or Desktop.</p>
+
         </div> 
       </div>
        
