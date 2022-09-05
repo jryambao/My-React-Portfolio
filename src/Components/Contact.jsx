@@ -1,48 +1,72 @@
-import React from "react";
+import React,{useRef} from "react";
 import '../icons.css'
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3blyza7",
+        "template_s9px0kh",
+        form.current,
+        "yzAerkOla4UUIm2_N"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-5xl font-bold inline border-b-4 border-gray-500">
-            Contact
+        <div className="pb-8 flex flex-col items-center">
+          <p className="text-5xl font-bold inline border-b-4 border-gray-500 font-header">
+            Contact Me
           </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
 
         <div className=" flex justify-center items-center">
           <form
-            action="https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"
-            method="POST"
             className=" flex flex-col w-full md:w-1/2"
+            ref={form}
+            onSubmit={sendEmail}
           >
             <input
               type="text"
-              name="name"
+              name="user_name"
+              required
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <input
-              type="text"
-              name="email"
+              type="email"
+              name="user_email"
+              required
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
+              required
               placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button className="button mt-12 w-full bg-gray-500 text-white">
-              <span className="send">Send message</span>
-              <i className="ri-send-plane-fill plane"></i>
-            <span className="sent">Message sent</span>
+            <button type="submit" className="button mt-12 w-full bg-gray-500 text-white ">
+              <span className="send font-nav text-xl font-semibold">Send message</span>
             </button>
           </form>
         </div>

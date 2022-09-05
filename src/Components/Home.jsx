@@ -11,8 +11,9 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          
-          <h4 className="text-xl sm:text-4xl font-semibold text-white text-center font-header">I'm,  <span className="text-purple-400 font-bold text-8xl font-signature"> John Yambao</span> </h4>
+          <h4 className="text-purple-400 font-bold sm:text-8xl text-6xl pt-24 font-signature text-center sm:mb-12">Greetings!</h4>
+
+          <h4 className="text-xl sm:text-4xl font-semibold text-white text-center"><span className="font-nav text-6xl">I'm, </span> <span className="text-purple-400 font-bold text-8xl font-signature"> John Yambao</span> </h4>
           <h2 className="text-4xl sm:text-7xl font-bold text-white text-center
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-indigo-500 via-purple-400 to-indigo-900

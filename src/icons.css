@@ -130,88 +130,91 @@
     margin-right: 15px;
     margin-top: 45px;
   }
-  .portfolio-container:hover .box {
-    transform: rotateY(25deg);
+  @media (min-width: 1269px) {
+    .portfolio-container:hover .box {
+      transform: rotateY(25deg);
+    }
+    .portfolio-container .box:hover ~ .box {
+      transform: rotateY(-25deg);
+    }
+    .portfolio-container .box:hover {
+      transform: rotateY(0deg) scale(1.25);
+      z-index: 1;
+      box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    }
+    .portfolio-container .box .imgBx {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .portfolio-container .box .imgBx:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg,#333333  ,#000);
+      z-index: 1;
+      opacity: 0;
+      transition: 0.5s;
+      mix-blend-mode: multiply;
+    }
+    .portfolio-container .box:hover .imgBx:before {
+      opacity: 1;
+    }
+    .portfolio-container .box .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .portfolio-container .box .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      padding: 20px;
+      align-items: flex-end;
+      box-sizing: border-box;
+    }
+    .portfolio-container .box .content h2 {
+  
+      transition: 0.3s;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      transform: translateY(200px);
+      transition-delay: 0.3s;
+    }
+    .portfolio-container .box:hover .content h2 {
+      transform: translateY(0px);
+    }
+    .portfolio-container .box .content p {
+  
+      transition: 0.3s;
+      transform: translateY(200px);
+      transition-delay: 0.4s;
+    }
+    .portfolio-container .box:hover .content p {
+      transform: translateY(0px);
+    }
+    .portfolio-container .box .content button{
+      transition: 0.3s;
+      transform: translateY(200px);
+      transition-delay: 0.4s;
+    }
+    .portfolio-container .box:hover .content button{
+      transform: translateY(0px);
+    }
   }
-  .portfolio-container .box:hover ~ .box {
-    transform: rotateY(-25deg);
-  }
-  .portfolio-container .box:hover {
-    transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
-    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-  }
-  .portfolio-container .box .imgBx {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .portfolio-container .box .imgBx:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,#333333  ,#000);
-    z-index: 1;
-    opacity: 0;
-    transition: 0.5s;
-    mix-blend-mode: multiply;
-  }
-  .portfolio-container .box:hover .imgBx:before {
-    opacity: 1;
-  }
-  .portfolio-container .box .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .portfolio-container .box .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    padding: 20px;
-    align-items: flex-end;
-    box-sizing: border-box;
-  }
-  .portfolio-container .box .content h2 {
-    color: #fff;
-    transition: 0.3s;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    transform: translateY(200px);
-    transition-delay: 0.3s;
-  }
-  .portfolio-container .box:hover .content h2 {
-    transform: translateY(0px);
-  }
-  .portfolio-container .box .content p {
-    color: #fff;
-    transition: 0.3s;
-    transform: translateY(200px);
-    transition-delay: 0.4s;
-  }
-  .portfolio-container .box:hover .content p {
-    transform: translateY(0px);
-  }
-  .portfolio-container .box .content button{
-    transition: 0.3s;
-    transform: translateY(200px);
-    transition-delay: 0.4s;
-  }
-  .portfolio-container .box:hover .content button{
-    transform: translateY(0px);
-  }
+  
 
   /* about css */
   .profile{
@@ -227,7 +230,22 @@
     height: 100%;
   }
 
-  @media (max-width: 600px) {
+  @media (min-width: 900px) and  (max-width: 1280px) {
+    .profile::before{
+      position: absolute;
+      content: '';
+      right: -50px;
+      top: 50px;
+      border: 10px solid rgba(192, 132, 252, 0.63);
+      width: 100%;
+      height: 70%;
+    }
+    .profile{
+      margin-right: 60px;
+    }
+  }
+
+  @media (max-width: 850px) {
     .profile::before{
       position: absolute;
       content: '';
@@ -258,70 +276,3 @@
     border-radius: 4px;
     overflow: hidden;
 }
-.button:focus {
-    animation: morph 1.25s forwards;
-}
-.button > * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.plane {
-    display: none;
-}
-.sent,
-.button:focus span {
-    opacity: 0;
-    visibility: hidden;
-}
-.button:focus .sent {
-    animation: reveal 1s 1.25s forwards;
-}
-.button:focus .plane {
-    display: block;
-    animation: takeOff 1s forwards;
-}
-
-@keyframes reveal {
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-@keyframes morph {
-    10%,
-    80% {
-        width: 50px;
-        border-radius: 50%;
-        background: #f3f3f3;
-        color: #3c2e9e;
-    }
-    100% {
-        background: #3c2e9e;
-        color: #f3f3f3;
-    }
-}
-@keyframes takeOff {
-    5%,
-    15%,
-    25%,
-    35%,
-    45% {
-        transform: translate(-47%, -50%);
-    }
-    10%,
-    20%,
-    30%,
-    40%,
-    50% {
-        transform: translate(-53%, -50%);
-    }
-    90% {
-        transform: translate(100px, -100px);
-    }
-    100% {
-        transform: translate(100px, -100px);
-    }
-  }

@@ -8,6 +8,7 @@ import bootstrap from '../assets/bootstrap.png'
 import tailwind from '../assets/tailwind.png'
 import laravel from '../assets/laravel.png'
 import mui from '../assets/mui.png'
+
 const Skills = () => {
   const techs = [
     {
@@ -66,7 +67,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className='sm:h-screen h-full w-full bg-gradient-to-b from-gray-900 via-black to-black sm:pt-24 pt-0 ' name="skills">
+    <div className='sm:h-screen h-full w-full bg-gradient-to-b from-gray-900 via-black to-black sm:pt-24 py-12 ' name="skills">
       <div className="container mx-auto">
         <div>
           <h3 className='text-white text-5xl font-header font-bold text-start underline underline-offset-8 decoration-gray-500'>Skills</h3>
