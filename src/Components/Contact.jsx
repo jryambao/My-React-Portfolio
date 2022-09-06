@@ -1,7 +1,7 @@
 import React,{useRef} from "react";
 import '../icons.css'
 import emailjs from "@emailjs/browser";
-
+import swal from 'sweetalert';
 const Contact = () => {
   const form = useRef();
 
@@ -18,7 +18,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          swal("Success","Thank you for contacting me!", "success")
         },
         (error) => {
           console.log(error.text);
@@ -78,7 +78,6 @@ const Contact = () => {
             <li> <a href="https://www.linkedin.com/in/john-ralph-y-595473137/"><i className="font-bold fa fa-linkedin" aria-hidden="true"></i></a> </li>
             <li> <a href="mailto: johnralph266@gmail.com"><i className="font-bold fa fa-google" aria-hidden="true"></i></a> </li>
         </ul>
-
         </div>
       </div>
     </div>
