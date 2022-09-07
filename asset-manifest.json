@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-React-Portfolio/static/css/main.6d4cda4f.css",
-    "main.js": "/My-React-Portfolio/static/js/main.4cf9cbed.js",
+    "main.js": "/My-React-Portfolio/static/js/main.6c8043a8.js",
     "static/js/787.128fc6e9.chunk.js": "/My-React-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/profile1.jpg": "/My-React-Portfolio/static/media/profile1.396f17dcaffc2516e379.jpg",
     "static/media/about.png": "/My-React-Portfolio/static/media/about.66d29cb122b34dcf22b3.png",
@@ -10,7 +10,7 @@
     "static/media/cms.JPG": "/My-React-Portfolio/static/media/cms.78fd653bf2ee94482781.JPG",
     "static/media/araktek2.JPG": "/My-React-Portfolio/static/media/araktek2.3ba3b5175051c3e4adc3.JPG",
     "static/media/araktek1.JPG": "/My-React-Portfolio/static/media/araktek1.b6f8896d5cd6d63fd108.JPG",
-    "static/media/Resume.pdf": "/My-React-Portfolio/static/media/Resume.1f961b101e26332577dd.pdf",
+    "static/media/Resume.pdf": "/My-React-Portfolio/static/media/Resume.c1ebbb8d694503f48822.pdf",
     "static/media/react.png": "/My-React-Portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/bootstrap.png": "/My-React-Portfolio/static/media/bootstrap.c5dedb5348b058d36661.png",
     "static/media/profile.jpg": "/My-React-Portfolio/static/media/profile.475619cac078c65e4301.jpg",
@@ -21,11 +21,11 @@
     "static/media/javascript.png": "/My-React-Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/My-React-Portfolio/index.html",
     "main.6d4cda4f.css.map": "/My-React-Portfolio/static/css/main.6d4cda4f.css.map",
-    "main.4cf9cbed.js.map": "/My-React-Portfolio/static/js/main.4cf9cbed.js.map",
+    "main.6c8043a8.js.map": "/My-React-Portfolio/static/js/main.6c8043a8.js.map",
     "787.128fc6e9.chunk.js.map": "/My-React-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d4cda4f.css",
-    "static/js/main.4cf9cbed.js"
+    "static/js/main.6c8043a8.js"
   ]
 }
