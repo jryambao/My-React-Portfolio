@@ -8,6 +8,7 @@ import bootstrap from '../assets/bootstrap.png'
 import tailwind from '../assets/tailwind.png'
 import laravel from '../assets/laravel.png'
 import mui from '../assets/mui.png'
+import jquery from '../assets/jquery.png'
 
 const Skills = () => {
   const techs = [
@@ -61,8 +62,8 @@ const Skills = () => {
     },
     {
       id: 9,
-      src: mui,
-      title: "Material UI",
+      src: jquery,
+      title: "Jquery",
       style: "shadow-blue-600",
     },
   ];
