@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Resume from '../assets/Resume.pdf'
+import CV from '../assets/YambaoCV.pdf'
 import Icons from "./Icons";
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             animate-text font-header mt-4">Fullstack Developer</h2>
           <div className="flex justify-center mt-8">
           
-          <a href={Resume} download="Resume" class="rounded-md relative inline-flex items-center justify-center h-12 px-6 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 shadow-md group">
+          <a href={CV} download="Resume" class="rounded-md relative inline-flex items-center justify-center h-12 px-6 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 shadow-md group">
             <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-gradient-to-r from-purple-500 to-purple-800 group-hover:translate-x-0 ease">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
